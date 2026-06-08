@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты репетитора французского | FrenchCoach</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container header-container">
+        <div class="logo">
+            <a href="index.html"> French<span>Coach</span></a>
+        </div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О репетиторе</a></li>
+                <li><a href="prices.html">Цены</a></li>
+                <li><a href="contacts.html" class="active">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="page-header">
+        <div class="container">
+            <h1>Свяжитесь со мной</h1>
+            <p>Напишите или позвоните — отвечу в течение 2 часов</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container contact-flex">
+            <div class="contact-info">
+                <h2>Контакты</h2>
+                <div class="contact-item">
+                    <span class="contact-emoji"></span>
+                    <div>
+                        <strong>Телефон / WhatsApp / Telegram</strong><br>
+                        <a href="tel:+79660000510">+7 (966) 000-05-10</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                  
+                    <div>
+                        <strong>Email</strong><br>
+                        <a href="mailto:12345ksen6789@gmail.com">12345ksen6789@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    
+                    <div>
+                        <strong>VK для занятий</strong><br>
+                        <a href="https://vk.com/kseofaniya" target="_blank">Kseofaniya</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    
+                    <div>
+                        <strong>Время ответа</strong><br>
+                        Ежедневно с 9:00 до 21:00 по МСК
+                    </div>
+                </div>
+                <div class="social-links">
+                    <p> Социальные сети:</p>
+                    <div class="social-icons">
+                        <a href="https://t.me/Wrlse" target="_blank">Telegram</a>
+                        <a href="https://wa.me/79660000510" target="_blank">WhatsApp</a>
+                        <a href="https://instagram.com/ksyhsnix.zzz" target="_blank">Instagram</a>
+                        <a href="https://vk.com/kseofaniya" target="_blank">VK</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h2>Оставить заявку на пробный урок</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Ваше имя *</label>
+                        <input type="text" id="name" name="name" required placeholder="Имя">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон или Telegram *</label>
+                        <input type="text" id="phone" name="phone" required placeholder="00000000000">
+                    </div>
+                    <div class="form-group">
+                        <label for="level">Ваш уровень французского</label>
+                        <select id="level" name="level">
+                            <option value="">Выберите...</option>
+                            <option>Начинающий (A1)</option>
+                            <option>Элементарный (A2)</option>
+                            <option>Средний (B1)</option>
+                            <option>Выше среднего (B2)</option>
+                            <option>Продвинутый (C1)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Цель занятий</label>
+                        <textarea id="message" name="message" rows="3" placeholder="Например: подготовка к DELF A2, разговорный для работы..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block"> Отправить заявку</button>
+                    <p class="form-note">*Я свяжусь с вами для уточнения времени.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="work-scheme">
+        <div class="container">
+            <h2 class="section-title">Как проходят занятия?</h2>
+            <div class="scheme-steps">
+                <div class="step">1. <strong>Вы оставляете заявку</strong><br>Указываете удобное время</div>
+                <div class="step">2. <strong>Я связываюсь с вами</strong><br>Знакомство и определение уровня</div>
+                <div class="step">3.<strong>Пробный урок</strong><br>Знакомство с методикой (50% стоимости)</div>
+                <div class="step">4. <strong>Начинаем заниматься</strong><br>По индивидуальной программе</div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p>© 2026 FrenchCoach — ваш проводник в мир французского языка бебебе</p>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('contactForm')?.addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Спасибо! Ваша заявка отправлена. Я свяжусь с вами в ближайшее время ');
+        this.reset();
+    });
+</script>
+
+</body>
+</html>
